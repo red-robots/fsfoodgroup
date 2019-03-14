@@ -1835,10 +1835,11 @@ body{background-image:url("images/pattern.png");background-repeat:repeat;backgro
 .home .foot-info{top:-32px;padding:0 20px}
 .banner-wrapper{min-height:230px}
 @media screen and (min-width:900px){.banner-wrapper{min-height:390px}
-}.banner-wrapper .logo{display:inline-block;margin-top:4%;color:#FFF;background:#000;padding:20px}
+}.banner-wrapper .logo{display:inline-block;margin-top:4%;color:#FFF;background:#000;padding:0 10px}
 @media screen and (min-width:900px){.banner-wrapper .logo{margin-top:5%}
-}.banner-wrapper .logo.image{width:120px}
-@media screen and (min-width:900px){.banner-wrapper .logo.image{width:200px}
+}.banner-wrapper .logo.image{width:150px}
+@media screen and (min-width:600px){.banner-wrapper .logo.image{width:190px}
+}@media screen and (min-width:900px){.banner-wrapper .logo.image{width:270px}
 }.banner-wrapper .wrapper{height:100%;position:relative}
 .banner-wrapper .entry-content{position:relative;max-width:900px;width:95%;margin:0 auto;z-index:20;padding-top:40px;padding-bottom:120px;color:#FFF;font-size:16px;font-weight:300}
 @media screen and (min-width:900px){.banner-wrapper .entry-content{font-size:20px}
@@ -1866,8 +1867,8 @@ body{background-image:url("images/pattern.png");background-repeat:repeat;backgro
 .restaurant-list .overlay{display:block;position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);z-index:2}
 .restaurant-list .logowrap{display:block;width:100%;position:absolute;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);text-align:center;padding:20px;box-sizing:border-box;z-index:10}
 .restaurant-list .branding{display:inline-block;width:180px;margin-top:0;-webkit-transition:all ease-out .4s;transition:all ease-out .4s}
-@media screen and (min-width:900px){.restaurant-list .branding{width:160px}
-}@media screen and (min-width:1200px){.restaurant-list .branding{width:200px}
+@media screen and (min-width:900px){.restaurant-list .branding{width:180px}
+}@media screen and (min-width:1200px){.restaurant-list .branding{width:250px}
 }.restaurant-list .branding img{width:100%;height:auto;float:left}
 .restaurant-list .pagelink{display:block;width:100%;height:100%}
 .restaurant-list .pagelink:hover .branding,.restaurant-list .pagelink:hover .imagebg{-webkit-transform:scale(1.08);-ms-transform:scale(1.08);transform:scale(1.08)}

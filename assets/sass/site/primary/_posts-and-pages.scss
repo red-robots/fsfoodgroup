@@ -8,14 +8,17 @@
 		margin-top: 4%;
 		color: #FFF;
 		background: #000;
-		padding: 20px;
+		padding: 0 10px;
 		@media screen and (min-width: $midwidth) {
 			margin-top: 5%;
 		}
 		&.image {
-			width: 120px;
+			width: 150px;
+			@media screen and (min-width: $tabwidth) {
+				width: 190px;
+			}
 			@media screen and (min-width: $midwidth) {
-				width: 200px;
+				width: 270px;
 			}
 		}
 	}
@@ -180,10 +183,10 @@
 		margin-top: 0;
 		@include transition(all ease-out .4s);
 		@media screen and (min-width: $midwidth) {
-			width: 160px;
+			width: 180px;
 		}
 		@media screen and (min-width: $deskwidth) {
-			width: 200px;
+			width: 250px;
 		}
 		img {
 			width: 100%;
