@@ -5,6 +5,9 @@
 	}
 	$intro_title = get_field('intro_title');
 	$intro_text = get_field('intro_text');
+
+	$buttonName = get_field("hdr_button_name","option");
+	$buttonLink = get_field("hdr_button_link","option");
 ?>
 <div class="banner-wrapper text-center">
 	<div class="banner-image"<?php echo $bg_style;?>>
@@ -27,6 +30,11 @@
 	        	<div class="textwrap">
 					<?php echo $intro_text; ?>	
 	        	</div>
+	        	<?php if ($buttonName && $buttonLink) { ?>
+	        	<div class="buttondiv mtop40">
+	        		<a href="<?php echo $buttonLink ?>" class="btn-bw"><?php echo $buttonName ?> <i class="fas fa-chevron-right"></i></a>
+	        	</div>	
+	        	<?php } ?>
 			</div>
 		</div>
 	</div>

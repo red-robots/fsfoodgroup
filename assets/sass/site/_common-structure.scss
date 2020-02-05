@@ -19,6 +19,9 @@ h1,h2,h3,h4,h5,h6 {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 }
+a,button,input {
+	transition: all ease-out .3s;
+}
 .clear:before, .clear:after { content: " "; display: table; }
 .clear { *zoom: 1; }
 .clear {clear: both;}
@@ -141,4 +144,30 @@ body {
 .home .foot-info {
 	top: -32px;
 	padding: 0 20px;
+}
+.mtop40 {
+	margin-top: 40px;
+}
+.btn-bw {
+	-webkit-appearance: none;
+	border: none;
+	border-radius: 0px;
+	border: 1px solid #FFF;
+	background: #FFF;
+	padding: 10px 20px 10px 15px;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.2;
+	color: #000;
+	display: inline-block;
+	text-decoration: none;
+	&:hover {
+		transform: scale(1.08);
+	}
+	.fa-chevron-right {
+		position: relative;
+		font-size: 13px;
+		top: -1px;
+		left: 7px;
+	}
 }

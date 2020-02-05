@@ -9,7 +9,7 @@ if ( $items->have_posts() ) {  ?>
 <div class="restaurant-list clear">
 	<div class="inner-wrapper wrapper clear">
 		<div class="row clear">
-			<?php while ( $items->have_posts() ) : $items->the_post(); 
+			<?php $i=1; while ( $items->have_posts() ) : $items->the_post(); 
 					$logo = get_field('company_logo');
 					$website = get_field('website_url');
 					$website_link = ($website) ? $website : '#';
@@ -20,8 +20,9 @@ if ( $items->have_posts() ) {  ?>
 					if($img) {
 						$bgImg = ' style="background-image:url('.$img[0].')"';
 					}
+					$seconds = $i+2;
 				?>
-				<div class="col text-center wow animated fadeInUp">
+				<div class="col text-center wow animated fadeInUp" data-wow-delay="0.<?php echo $seconds?>s">
 					<div class="inside  clear">
 						<a class="pagelink" href="<?php echo $website_link; ?>"<?php echo ($website) ? ' target="_blank"':''?>>
 							<span class="imagebg"<?php echo $bgImg;?>></span>
@@ -36,7 +37,7 @@ if ( $items->have_posts() ) {  ?>
 						</a>
 					</div>
 				</div>
-			<?php endwhile; wp_reset_postdata(); ?>
+			<?php $i++; endwhile; wp_reset_postdata(); ?>
 		</div>
 	</div>
 </div>

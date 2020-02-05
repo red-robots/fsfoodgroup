@@ -1805,6 +1805,7 @@ html[xmlns] .flexslider .slides{display:block}
 div,h1,h2,h3,h4,h5,h6,p,li,a,span,strong{overflow-wrap:normal;word-wrap:normal;-ms-word-break:normal;word-break:normal;word-break:normal;-ms-hyphens:none;-moz-hyphens:none;-webkit-hyphens:none;hyphens:none;page-break-inside:avoid}
 h1,h2,h3,h4,h5,h6{font-family:"Poppins",sans-serif;font-weight:600}
 *{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}
+a,button,input{-webkit-transition:all ease-out .3s;transition:all ease-out .3s}
 .clear:before,.clear:after{content:" ";display:table}
 .clear{*zoom:1}
 .clear{clear:both}
@@ -1833,6 +1834,10 @@ body{background-image:url("images/pattern.png");background-repeat:repeat;backgro
 .site-footer .foot-info a:hover{opacity:.4}
 .site-footer .foot-info a.last,.site-footer .foot-info a:last-child{border-right:0}
 .home .foot-info{top:-32px;padding:0 20px}
+.mtop40{margin-top:40px}
+.btn-bw{-webkit-appearance:none;border:0;border-radius:0;border:1px solid #FFF;background:#FFF;padding:10px 20px 10px 15px;font-size:18px;font-weight:500;line-height:1.2;color:#000;display:inline-block;text-decoration:none}
+.btn-bw:hover{-webkit-transform:scale(1.08);-ms-transform:scale(1.08);transform:scale(1.08)}
+.btn-bw .fa-chevron-right{position:relative;font-size:13px;top:-1px;left:7px}
 .banner-wrapper{min-height:230px}
 @media screen and (min-width:900px){.banner-wrapper{min-height:390px}
 }.banner-wrapper .logo{display:inline-block;margin-top:4%;color:#FFF;background:#000;padding:0 10px}
